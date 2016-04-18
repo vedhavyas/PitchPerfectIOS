@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		249A795E1CBE89140041C192 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A795D1CBE89140041C192 /* AppDelegate.swift */; };
-		249A79601CBE89140041C192 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A795F1CBE89140041C192 /* ViewController.swift */; };
+		249A79601CBE89140041C192 /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A795F1CBE89140041C192 /* RecordingViewController.swift */; };
 		249A79631CBE89140041C192 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 249A79611CBE89140041C192 /* Main.storyboard */; };
 		249A79651CBE89140041C192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 249A79641CBE89140041C192 /* Assets.xcassets */; };
 		249A79681CBE89140041C192 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 249A79661CBE89140041C192 /* LaunchScreen.storyboard */; };
 		249A79731CBE89140041C192 /* PitchPerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A79721CBE89140041C192 /* PitchPerfectTests.swift */; };
 		249A797E1CBE89140041C192 /* PitchPerfectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A797D1CBE89140041C192 /* PitchPerfectUITests.swift */; };
+		249A798C1CBFAF440041C192 /* PlayRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A798B1CBFAF440041C192 /* PlayRecordViewController.swift */; };
+		249A798E1CC23FF10041C192 /* PlaySoundsViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A798D1CC23FF10041C192 /* PlaySoundsViewController+Audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		249A795A1CBE89140041C192 /* PitchPerfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchPerfect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		249A795D1CBE89140041C192 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		249A795F1CBE89140041C192 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		249A795F1CBE89140041C192 /* RecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
 		249A79621CBE89140041C192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		249A79641CBE89140041C192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		249A79671CBE89140041C192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		249A79791CBE89140041C192 /* PitchPerfectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PitchPerfectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		249A797D1CBE89140041C192 /* PitchPerfectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchPerfectUITests.swift; sourceTree = "<group>"; };
 		249A797F1CBE89140041C192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		249A798B1CBFAF440041C192 /* PlayRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayRecordViewController.swift; sourceTree = "<group>"; };
+		249A798D1CC23FF10041C192 /* PlaySoundsViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+Audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				249A795D1CBE89140041C192 /* AppDelegate.swift */,
-				249A795F1CBE89140041C192 /* ViewController.swift */,
+				249A795F1CBE89140041C192 /* RecordingViewController.swift */,
+				249A798B1CBFAF440041C192 /* PlayRecordViewController.swift */,
+				249A798D1CC23FF10041C192 /* PlaySoundsViewController+Audio.swift */,
 				249A79611CBE89140041C192 /* Main.storyboard */,
 				249A79641CBE89140041C192 /* Assets.xcassets */,
 				249A79661CBE89140041C192 /* LaunchScreen.storyboard */,
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				249A79601CBE89140041C192 /* ViewController.swift in Sources */,
+				249A79601CBE89140041C192 /* RecordingViewController.swift in Sources */,
+				249A798E1CC23FF10041C192 /* PlaySoundsViewController+Audio.swift in Sources */,
+				249A798C1CBFAF440041C192 /* PlayRecordViewController.swift in Sources */,
 				249A795E1CBE89140041C192 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +412,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PitchPerfect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vedhavyas.PitchPerfect;
@@ -415,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PitchPerfect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vedhavyas.PitchPerfect;
@@ -487,6 +497,7 @@
 				249A79841CBE89140041C192 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		249A79851CBE89140041C192 /* Build configuration list for PBXNativeTarget "PitchPerfectTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +506,7 @@
 				249A79871CBE89140041C192 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		249A79881CBE89140041C192 /* Build configuration list for PBXNativeTarget "PitchPerfectUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +515,7 @@
 				249A798A1CBE89140041C192 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
